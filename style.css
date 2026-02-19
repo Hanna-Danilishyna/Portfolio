@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #1e293b;
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  
+  nav a:hover {
+    color: #38bdf8;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    color: #94a3b8;
+  }
+  
+  /* Work Section */
+  .work {
+    padding: 4rem 0;
+  }
+  
+  .work h2,
+  .about h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .project-card:hover {
+    border: 1px solid #38bdf8;
+    transform: translateY(-4px);
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0.8rem;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+  }
+  
+  .tag {
+    font-size: 0.75rem;
+    color: #38bdf8;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 0;
+    border-top: 1px solid #1e293b;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #64748b;
+    border-top: 1px solid #1e293b;
+  }
+  
+  .case-hero {
+    padding: 5rem 0 3rem;
+  }
+  
+  .case-hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .case-section {
+    padding: 3rem 0;
+    border-top: 1px solid #1e293b;
+  }
+  
+  .case-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .case-meta {
+    display: flex;
+    gap: 2rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+
+  .case-hero {
+    padding: 5rem 0 3rem;
+  }
+  
+  .case-hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .case-meta {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0 3rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  
+  .case-section {
+    padding: 4rem 0;
+    border-top: 1px solid #1e293b;
+  }
+  
+  .case-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .case-image {
+    display: block;      /* обязательно, иначе margin auto не сработает */
+    width: 50%;
+    margin: 2rem auto 0; /* сверху 2rem, по центру auto, снизу 0 */
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+  }
+  
+
+  .persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .persona-card {
+    background: #1e293b;
+    border-radius: 14px;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    border: 1px solid #1e293b;
+  }
+  
+  .persona-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .persona-content h3 {
+    margin-bottom: 0.3rem;
+  }
+  
+  .persona-subtitle {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+  }
+  
+  .persona-content h4 {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #38bdf8;
+  }
+  
+  .persona-content ul {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .ui-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .ui-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+    transition: 0.3s ease;
+  }
+  
+  .ui-card:hover {
+    border: 1px solid #38bdf8;
+    transform: translateY(-4px);
+  }
+  
+  .ui-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .pdf-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .pdf-button:hover {
+    background: #38bdf8;
+    color: #0f172a;
+  }
+
+/* Lightbox */
+.lightbox {
+    display: none; /* скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15,23,42,0.9);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+  }
+  
+  .lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #38bdf8;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .ui-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .ui-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+    transition: 0.3s ease;
+  }
+  
+  .ui-card:hover {
+    border: 1px solid #38bdf8;
+    transform: translateY(-4px);
+  }
+  
+  .ui-image {
+    width: 100%;
+    max-height: 300px; /* ограничивает размер всех экранов */
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+
+
+
+
+/* Gallery for Affinity, Identity, Wall Walk */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #1e293b;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .gallery-card:hover {
+    border: 1px solid #38bdf8;
+    transform: translateY(-4px);
+  }
+  
+  .gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery-title {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #38bdf8;
+  }
+  
+  /* UI cards */
+  .ui-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .ui-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+    transition: 0.3s ease;
+  }
+  
+  .ui-card:hover {
+    border: 1px solid #38bdf8;
+    transform: translateY(-4px);
+  }
+  
+  .ui-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Wide full-flow UI */
+  .ui-wide {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .ui-wide-image {
+    width: 100%;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: 1rem 0;
+    border: 1px solid #1e293b;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    border-radius: 12px;
+  }
+  
+  #caption {
+    text-align: center;
+    color: #ccc;
+    margin: 10px 0 30px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .research-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+  }
+  
+  .research-card:hover {
+    border: 1px solid #38bdf8;
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+  }
+  
+  .research-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .section-intro {
+    color: #94a3b8;
+    max-width: 600px;
+    margin-bottom: 1rem;
+  }
+  

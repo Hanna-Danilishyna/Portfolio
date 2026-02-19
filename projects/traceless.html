@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TraceLess — Privacy Analytics Dashboard</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <div class="logo">Hanna Danilishyna</div>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="container">
+    <h1>TraceLess — The Overshared Self</h1>
+    <p>
+      A privacy analytics dashboard that visualizes personal digital exposure
+      and transforms complex data into actionable insights.
+    </p>
+
+    <div class="case-meta">
+      <div>Role: UX Researcher · Data Analyst · Designer</div>
+      <div>Type: MSc Thesis Extension</div>
+      <div>Duration: ~30 hours</div>
+    </div>
+
+    <img src="/assets/traceless/dashboard.png" class="case-image">
+  </div>
+</section>
+
+<!-- CONTEXT -->
+<section class="case-section">
+  <div class="container">
+    <h2>Project Overview</h2>
+    <p>
+      TraceLess explores how publicly available personal data can be aggregated
+      into a measurable digital exposure profile. The goal was to create a system
+      that quantifies risk while presenting it in an intuitive and transparent way.
+    </p>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="case-section">
+  <div class="container">
+    <h2>Research Insights</h2>
+
+    <ul>
+      <li>Users underestimate the scale of publicly available personal data</li>
+      <li>Strong desire for transparency and control</li>
+      <li>Existing tools lack clarity and actionable insights</li>
+    </ul>
+
+  </div>
+</section>
+
+<section class="case-section">
+    <div class="container">
+      <h2>Personas</h2>
+      <p class="section-intro">
+        Based on qualitative interviews and thematic analysis,
+        two key user types emerged.
+      </p> 
+      <div class="persona-grid">
+  
+        <!-- Persona 1 -->
+        <div class="persona-card">
+          <img src="/assets/traceless/persona_female.jpg" class="persona-avatar">
+  
+          <div class="persona-content">
+            <h3>The Anxious User</h3>
+  
+            <p class="persona-subtitle">
+              Wants to reduce digital footprint and regain control over personal data.
+            </p>
+  
+            <h4>Goals</h4>
+            <ul>
+              <li>Reduce public exposure</li>
+              <li>Understand who can access their data</li>
+              <li>Regain privacy control</li>
+            </ul>
+  
+            <h4>Frustrations</h4>
+            <ul>
+              <li>Overwhelmed by complex privacy settings</li>
+              <li>Does not know what data is public</li>
+              <li>Anxiety about misuse of personal info</li>
+            </ul>
+          </div>
+        </div>
+  
+  
+        <!-- Persona 2 -->
+        <div class="persona-card">
+          <img src="/assets/traceless/persona_male.jpg" class="persona-avatar">
+  
+          <div class="persona-content">
+            <h3>The Conscious Analyst</h3>
+  
+            <p class="persona-subtitle">
+              Wants clear insights and measurable control over their digital presence.
+            </p>
+  
+            <h4>Goals</h4>
+            <ul>
+              <li>Track exposure across platforms</li>
+              <li>Understand data aggregation risks</li>
+              <li>Make informed privacy decisions</li>
+            </ul>
+  
+            <h4>Frustrations</h4>
+            <ul>
+              <li>Lack of transparency in existing tools</li>
+              <li>Difficult to quantify exposure</li>
+              <li>Manual monitoring is time-consuming</li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- DATA ARCHITECTURE -->
+<section class="case-section">
+    <div class="container">
+      <h2>Data Model</h2>
+  
+      <p>
+        The system models digital exposure through a structured pipeline that
+        transforms raw public data into a measurable exposure score.
+      </p>
+  
+      <ul>
+        <li>Data sources include social platforms, forums, and indexed content</li>
+        <li>Each data point is evaluated by sensitivity and visibility</li>
+        <li>Cross-linkability determines how easily data can be aggregated</li>
+        <li>All factors are combined into a normalized exposure score</li>
+      </ul>
+  
+      <h3>Exposure Formula</h3>
+      <p>
+        Exposure Score = Sensitivity × Visibility × Cross-linkability
+      </p>
+  
+    </div>
+  </section>
+  
+
+<!-- VISUALIZATION -->
+<section class="case-section">
+  <div class="container">
+    <h2>Network Visualization</h2>
+
+    <p>
+      A graph-based model reveals relationships between platforms, data points,
+      and exposure risks.
+    </p>
+
+    <img src="/assets/traceless/graph.png" class="case-image">
+  </div>
+</section>
+
+<!-- UX DESIGN -->
+<section class="case-section">
+    <div class="container">
+      <h2>Interface Design</h2>
+  
+      <p class="section-intro">
+        The interface communicates complex privacy data through a clear three-level structure: overview, exploration, and detailed analysis.
+      </p>
+  
+      <div class="ui-grid">
+  
+        <!-- Dashboard -->
+        <div class="ui-card">
+          <img src="/assets/traceless/dashboard.png" class="ui-image clickable" data-full="/assets/traceless/dashboard.png">
+  
+          <h3>Dashboard Overview</h3>
+          <p>High-level exposure score and risk distribution across platforms.</p>
+        </div>
+  
+        <!-- Graph View (маленькая) -->
+        <div class="ui-card">
+          <img src="/assets/traceless/graph_view.png" class="ui-image clickable small" data-full="/assets/traceless/graph_view.png">
+  
+          <h3>Network Graph View</h3>
+          <p>Explore how your personal data is linked.</p>
+        </div>
+  
+        <!-- Risk Breakdown -->
+        <div class="ui-card">
+          <img src="/assets/traceless/risk_distr.png" class="ui-image clickable" data-full="/assets/traceless/risk_distr.png">
+  
+          <h3>Risk Breakdown</h3>
+          <p>Detailed table of data points, risk levels, and recommended actions.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+  </div>
+  
+
+<!-- OUTCOME -->
+<section class="case-section">
+  <div class="container">
+    <h2>Outcome</h2>
+
+    <ul>
+      <li>Created a data-driven UX system for digital exposure analysis</li>
+      <li>Integrated Python data visualization into UI design</li>
+      <li>Demonstrated how UX can communicate complex privacy risks</li>
+    </ul>
+  </div>
+</section>
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox .close');
+    
+    document.querySelectorAll('.clickable').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.dataset.full;
+      });
+    });
+    
+    // Закрытие при клике на X или вне картинки
+    closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) lightbox.style.display = 'none';
+    });
+    </script>
+    
+</body>
+</html>

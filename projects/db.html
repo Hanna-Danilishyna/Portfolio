@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsche Bahn Experience</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <div class="logo">Hanna Danilishyna</div>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="container">
+    <h1>Deutsche Bahn Passenger Experience</h1>
+    <p>
+      Contextual research and service design to improve passenger journeys, 
+      addressing real pain points and introducing actionable features.
+    </p>
+
+    <div class="case-meta">
+      <div>Role: UX Researcher & Designer</div>
+      <div>Team: 5</div>
+      <div>Duration: 6 weeks</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="case-section">
+  <div class="container">
+    <h2>Problem</h2>
+    <p>
+      Passengers were frustrated by train cancellations, ticketing issues, 
+      lack of scenic route notifications, and poor real-time guidance during journeys.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="case-section">
+  <div class="container">
+    <h2>Process & Research Methods</h2>
+
+    <p>We used a combination of contextual inquiries, affinity mapping, identity mapping, and co-creation workshops.</p>
+
+    <div class="gallery-grid">
+      <!-- Affinity Mapping -->
+      <div class="gallery-card">
+        <img src="/assets/db/affinity.png" alt="Affinity Map">
+        <div class="gallery-title">Affinity Map</div>
+      </div>
+
+      <!-- Identity -->
+      <div class="gallery-card">
+        <img src="/assets/db/identity.png" alt="Identity Mapping">
+        <div class="gallery-title">Identity Mapping</div>
+      </div>
+
+      <!-- Wall Walk -->
+      <div class="gallery-card">
+        <img src="/assets/db/wall.png" alt="Wall Walk Session">
+        <div class="gallery-title">Wall Walk Session</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UX DESIGN -->
+<section class="case-section">
+  <div class="container">
+    <h2>UX & Interface Design</h2>
+    <p>
+      Based on research insights, we designed new features to improve user experience, including reminders, scenic route notifications, and integration of student passes.
+    </p>
+
+    <div class="ui-grid">
+      <!-- Reminder -->
+      <div class="ui-card">
+        <img src="/assets/db/reminder.png" class="ui-image">
+        <h3>Reminder Feature</h3>
+        <p>
+          Provides a sound notification when the passenger is approaching their destination.
+        </p>
+      </div>
+
+      <!-- Scenic Route -->
+      <div class="ui-card">
+        <img src="/assets/db/scenic_route.png" class="ui-image">
+        <h3>Scenic Route Notification</h3>
+        <p>
+          Alerts passengers of interesting scenic views during their journey.
+        </p>
+      </div>
+    </div>
+
+    <!-- Full Flow UI -->
+    <div class="ui-wide">
+      <img src="/assets/db/ui_db.png" class="ui-wide-image">
+      <h3>Full App Flow</h3>
+      <p>
+        Comprehensive view of adding a student pass and accessing main features in the app.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="case-section">
+  <div class="container">
+    <h2>Outcome</h2>
+    <ul>
+      <li>Introduced actionable reminders and scenic route notifications.</li>
+      <li>Improved passenger guidance and journey satisfaction.</li>
+      <li>Demonstrated value of contextual inquiry and participatory workshops.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MODAL FOR IMAGE PREVIEW -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="caption"></div>
+</div>
+
+<script>
+  // Modal image preview
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const caption = document.getElementById("caption");
+
+  document.querySelectorAll(".gallery-card img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      caption.textContent = img.alt;
+    });
+  });
+
+  document.querySelector(".close").onclick = () => modal.style.display = "none";
+</script>
+
+</body>
+</html>
