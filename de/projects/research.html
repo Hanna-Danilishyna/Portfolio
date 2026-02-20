@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experimentelle UX Forschung</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="scroll-progress"></div>
+    <header class="navbar" id="navbar-placeholder">
+    </header>
+
+<section class="case-hero">
+  <div class="container">
+    <h1>Experimentelle UX Forschung</h1>
+    <p>Studien zur Untersuchung von Wahrnehmung, Emotionen und physiologischen Reaktionen in HCI.</p>
+    <div class="case-meta">
+        <div><strong>Rolle:</strong> UX Forscherin</div>
+        <div><strong>Team:</strong> 6 / Solo</div>
+        <div><strong>Dauer:</strong> 3–4 Monate</div>
+        <div><strong>Tools:</strong> Tobii Pro Nano, Python, Figma</div>
+      </div>
+  </div>
+</section>
+
+<!-- BEAUTY FILTER STUDY -->
+<section class="case-section">
+    <div class="container">
+      <h2>Einfluss von Beauty-Filtern auf wahrgenommene Attraktivität</h2>
+  
+      <p class="section-intro">
+        Untersucht, wie unterschiedliche Filterstärken die subjektive Wahrnehmung von Attraktivität und physiologische Reaktionen (Pupillenerweiterung) beeinflussen, um Erkenntnisse für UX und Social-Media-Design zu gewinnen.
+      </p>
+  
+      <h3>Studienaufbau</h3>
+      <ul>
+        <li>Within-Subject-Design: 16 Teilnehmer:innen, 3 Filterintensitäten (0%, 100%, 200%)</li>
+        <li>KI-generierte Gesichter von thispersondoesnotexist.com</li>
+        <li>Teilnehmer bewerteten Gesichter auf einer 7-Punkte-Skala, während Eye-Tracking die Pupillenreaktionen erfasste</li>
+      </ul>
+  
+      <h3>Visuelle Beispiele</h3>
+      <div class="research-grid">
+        <div class="research-card">
+          <img src="/assets/research/pic_with_filters.png" class="research-image">
+          <h3>Beispielgesichter mit Filtern</h3>
+          <p>Gesichter mit 0%, 100% und 200% Filterstärke zur Bewertung durch Teilnehmer:innen.</p>
+        </div>
+  
+        <div class="research-card">
+          <img src="/assets/research/mean_ratings.png" class="research-image">
+          <h3>Durchschnittliche Attraktivitätsbewertungen</h3>
+          <p>Mittlerer Filter (100%) erhöhte die wahrgenommene Attraktivität, 200% reduzierte Vertrauen und Authentizität.</p>
+        </div>
+      </div>
+  
+      <h3>Wesentliche Erkenntnisse</h3>
+      <ul>
+        <li>Mittlere Filterstufen erhöhen die wahrgenommene Attraktivität</li>
+        <li>Zu starke Filter reduzieren die Vertrauenswürdigkeit</li>
+        <li>Pupillenerweiterung validiert physiologische Messungen subjektiver Bewertungen</li>
+      </ul>
+  
+      <h3>Implikationen</h3>
+      <ul>
+        <li>Designentscheidungen beeinflussen Nutzerwahrnehmung und Selbstbild</li>
+        <li>Unterstützt ausgewogenes Filter-Design für Social-Media-UX</li>
+      </ul>
+    </div>
+</section>
+
+<!-- PROFESSOR STUDY -->
+<section class="case-section">
+    <div class="container">
+      <h2>Einfluss vertrauter vs. unbekannter Gesichter auf Augenlidabstände</h2>
+  
+      <p class="section-intro">
+        Untersucht, wie Vertrautheit von Gesichtern den Augenlidabstand und die Blinkrate beeinflusst, zur Erforschung physiologischer Emotionsindikatoren für UX-Forschung.
+      </p>
+  
+      <h3>Studienaufbau</h3>
+      <ul>
+        <li>Within-Subject 2x3 Design: 18 Studierende, vertraute vs. unbekannte Professorengesichter</li>
+        <li>Messung von Augenlidabstand und Blinkrate mittels Tobii Pro Nano Eye-Tracker</li>
+      </ul>
+  
+      <h3>Visuelle Daten</h3>
+      <div class="research-grid">
+        <div class="research-card">
+          <img src="/assets/research/prof_pic.png" class="research-image">
+          <h3>Gezeigte Professoren</h3>
+          <p>Bilder zur Prüfung von Wiedererkennungseffekten.</p>
+        </div>
+  
+        <div class="research-card">
+          <img src="/assets/research/eyelids_dist.png" class="research-image">
+          <h3>Augenlidabstand</h3>
+          <p>Boxplot zeigt durchschnittlichen Augenlidabstand bei vertrauten und unbekannten Gesichtern.</p>
+        </div>
+  
+        <div class="research-card">
+          <img src="/assets/research/blinking_rate.png" class="research-image">
+          <h3>Blinkrate</h3>
+          <p>Boxplot zeigt Unterschiede der Blinkrate nach Vertrautheit.</p>
+        </div>
+      </div>
+  
+      <h3>Wesentliche Ergebnisse</h3>
+      <ul>
+        <li>Keine signifikanten Unterschiede im Augenlidabstand basierend auf Vertrautheit</li>
+        <li>Blinkrate leicht variiert, insgesamt konsistent</li>
+        <li>Hebt Komplexität hervor, Augenlidabstand allein zur Emotionserkennung zu nutzen</li>
+      </ul>
+  
+      <h3>Erkenntnisse & Implikationen</h3>
+      <ul>
+        <li>Bestätigung der Notwendigkeit sorgfältiger Validierung biometrischer Emotionsmessungen</li>
+        <li>Unterstützt zukünftige Forschung zu multimodalen physiologischen Signalen in UX</li>
+      </ul>
+    </div>
+</section>
+
+<script src="/js/navbar.js"></script>
+</body>
+</html>

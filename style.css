@@ -1,4 +1,4 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,10 +6,11 @@
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #0f172a;
+    background-color: #151D32; /* более светлый, глубокий темно-синий */
     color: #e2e8f0;
     line-height: 1.6;
   }
+  
   
   .container {
     width: 90%;
@@ -17,11 +18,11 @@
     margin: 0 auto;
   }
   
-  /* Navbar */
+  /* Navbar 
   .navbar {
     padding: 1.5rem 0;
     border-bottom: 1px solid #1e293b;
-  }
+  }*/
   
   .nav-content {
     display: flex;
@@ -367,10 +368,10 @@
   /* UI cards */
   .ui-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
+  
   
   .ui-card {
     background: #1e293b;
@@ -478,4 +479,672 @@
     max-width: 600px;
     margin-bottom: 1rem;
   }
+
+  .about-intro {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    color: #e2e8f0;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+  
+  .about-education h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .about-education p {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+  }
+  
+
+  .formula-box {
+    background:#0f172a;
+    border:1px solid #38bdf8;
+    padding:1rem;
+    margin-top:1rem;
+    border-radius:8px;
+    font-weight:600;
+  }
+
+
+/* ---------- CASE PAGE GLOBAL STYLES ---------- */
+
+.case-section {
+    padding: 4rem 0;
+    border-top: 1px solid #1e293b;
+  }
+  
+  .case-section .container {
+    max-width: 800px;
+  }
+  
+  /* Заголовки внутри кейсов */
+  .case-section h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .case-section h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: #38bdf8;
+    font-size: 1.1rem;
+  }
+  
+  /* Параграфы */
+  .case-section p {
+    margin-bottom: 1rem;
+    color: #94a3b8;
+  }
+  
+  /* Списки */
+  .case-section ul {
+    margin-left: 0;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .case-section li {
+    margin-bottom: 0.4rem;
+  }
+
+  
+
+  .case-section ul {
+    list-style: none;
+  }
+  
+  .case-section li::before {
+    content: "•";
+    color: #38bdf8;
+    margin-right: 8px;
+  }
+
+  .section-intro {
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .case-section + .case-section {
+    margin-top: 1rem;
+  }
+
+  .case-section {
+    line-height: 1.7;
+  }
+
+  .formula-box {
+    margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  border: 1px solid #1e293b;
+  text-align: center;
+  }
+
+  .case-section {
+    padding: 5rem 0;
+  }
+  .case-section {
+    padding: 6rem 0;
+    border-top: 1px solid #1e293b;
+  }
+  
+  .case-section:first-child {
+    border-top: none;
+  }
+
+  .case-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+  }
+  
+  .case-section h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    color: #38bdf8;
+  }
+  
+  .case-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #94a3b8;
+    margin-bottom: 1.2rem;
+  }
+
+  .case-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+  
+  .case-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .case-section li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: #38bdf8;
+    border-radius: 50%;
+  }
+
+  .highlight-box {
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid #1e293b;
+    padding: 2rem;
+    border-radius: 14px;
+    margin: 2rem 0;
+  }
+  .section-intro {
+    max-width: 640px;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 3rem;
+  }
+  .formula {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .highlight-box {
+    transition: all 0.25s ease;
+  }
+  
+  .highlight-box:hover {
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+  }
+
+  .case-section {
+    position: relative;
+  }
+  
+  .case-section::after {
+    content: "";
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background: #1e293b;
+    transform: translateX(-50%);
+  }
+
+  body {
+    background: radial-gradient(circle at top, #151D32, #0f172a);
+  }
+  
+  
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    z-index: 9999;
+    transition: width 0.1s ease;
+  }
+  .scroll-progress {
+    box-shadow: 0 0 10px #38bdf8;
+  }
+
+  .scroll-progress {
+    opacity: 0;
+    transition: width 0.1s ease, opacity 0.3s ease;
+  }
+  
+
+  .graph-large {
+    width: 100%;
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+  }
+  
+  .section-intro {
+    max-width: 640px;
+    color: #cbd5e1;
+    margin-bottom: 2.5rem;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-card {
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #1e293b;
+    transition: 0.3s ease;
+  }
+  
+  .gallery-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+  }
+  
+  .gallery-title {
+    margin-top: 0.8rem;
+    font-weight: 600;
+    color: #38bdf8;
+  }
+  
+  .ui-wide-image {
+    width: 100%;
+    border-radius: 14px;
+    margin-top: 2rem;
+  }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .highlight-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .highlight-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .case-section {
+    padding: 5rem 0;
+    border-top: 1px solid #1e293b;
+  }
+  
+  .section-intro {
+    max-width: 640px;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+  }
+  
+  .case-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+  
+  .case-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .case-section li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: #38bdf8;
+    border-radius: 50%;
+  }
+
+  /* Research projects layout */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .research-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+    transition: 0.3s ease;
+  }
+  
+  .research-card:hover {
+    border: 1px solid #38bdf8;
+    transform: translateY(-2px);
+  }
+  
+  .research-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .section-intro {
+    max-width: 640px;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+  }
+  
+  .case-section h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #38bdf8;
+  }
+
+
+
+
+  /* Логотип + локация */
+.logo-block {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+
+
+
+
+
+
+  /* Navbar ссылки */
+.nav-content nav a {
+    margin-left: 1.8rem; /* равномерный отступ между всеми элементами */
+    display: inline-block;
+     text-align: center;
+  }
+  .contact-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 1.8rem;
+  }
+
+
+  /* Локация рядом с именем */
+.logo {
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+ 
+/* Контейнер dropdown */
+
+
+/* Кнопка Contact */
+.contact-btn {
+    background: none;
+    border: 2px solid #7dd3fc;
+    border-radius: 4px;
+    color: #7dd3fc;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+/* Меню dropdown */
+.contact-menu {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    text-align: center;
+    margin-left: 0 !important;
+    transform: translateX(-50%) translateY(-10px); /*привязываем к левому краю контейнера */
+    background-color: #1e293b;
+    color: #7dd3fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    padding: 0.4rem 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* растягиваем ссылки на всю ширину */
+    min-width: 160px;
+    width: 160px; /* минимальная ширина dropdown */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  
+
+}
+
+/* Показываем меню */
+.contact-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* сохраняем центрирование */
+}
+
+/* Ссылки внутри dropdown */
+.contact-menu a {
+    display: block;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: #7dd3fc;
+    font-size: 0.95rem;
+    
+}
+
+/* Hover эффект для ссылок */
+.contact-menu a:hover {
+    background-color: #0f172a;
+    border-radius: 4px;
+}
+
+.contact-menu a {
+    margin-left: 0;  /* ← add this one line */
+    display: block;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: #7dd3fc;
+    font-size: 0.95rem;
+}
+
+.contact-menu a {
+    margin-left: 0 !important;
+    color: #7dd3fc !important;
+    font-size: 0.95rem !important;
+}
+
+/* Навигация flex */
+.nav-content nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* расстояние между ссылками */
+  }
+  
+  /* Контейнер языков */
+  .lang-wrapper {
+    display: flex;       /* чтобы держать DE | ENG в одну линию */
+    align-items: center; 
+    margin-left: 1rem;   /* расстояние от соседней ссылки */
+  }
+  
+  /* Собственно языки */
+  .lang-switch {
+    display: flex;
+    gap: 0.3rem;         /* расстояние между DE | ENG */
+  }
+  
+  .lang-switch a {
+    text-decoration: none;
+    color: #7dd3fc;
+    font-weight: 600;
+  }
+  
+  .lang-switch a:hover {
+    text-decoration: underline;
+  }
+  
+  .lang-switch .separator {
+    color: #7dd3fc;
+  }
+
+
+  /* NAVBAR GLOBAL */
+.nav-content {
+    display: flex;
+    justify-content: space-between; /* логотип слева, остальное справа */
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  /* Основные ссылки */
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* Логотип */
+  .logo {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  /* Contact dropdown */
+  .contact-dropdown {
+    position: relative;
+  }
+  
+  .contact-btn {
+    background: none;
+    border: 2px solid #7dd3fc;
+    border-radius: 4px;
+    color: #7dd3fc;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .contact-menu {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background-color: #1e293b;
+    color: #7dd3fc;
+    border-radius: 8px;
+    padding: 0.4rem 0;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .contact-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .contact-menu a {
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: #7dd3fc;
+    text-align: center;
+  }
+  
+  .contact-menu a:hover {
+    background-color: #0f172a;
+    border-radius: 4px;
+  }
+  
+  /* PDF кнопка */
+  .pdf-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .pdf-button:hover {
+    background: #38bdf8;
+    color: #0f172a;
+  }
+  
+  /* Языки */
+ /* ---------- OVERRIDE для языков ---------- */
+.lang-wrapper {
+    margin-left: 0 !important;        /* убираем все старые отступы */
+    display: flex !important;         /* фиксируем flex */
+    align-items: center !important;   /* по вертикали центр */
+}
+
+.lang-switch {
+    display: flex !important;        
+    gap: 0.3rem !important;         
+    margin: 0 !important;             
+    padding: 0 !important;            
+    flex-shrink: 0 !important;        
+}
+
+.lang-switch a,
+.lang-switch .separator {
+    display: inline-block !important; 
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #7dd3fc !important;
+}
+
+.lang-switch a:hover {
+    text-decoration: underline !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent; /* изначально прозрачный */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    color: white; /* чтобы текст был виден на hero */
+    padding: 1rem 0;
+  }
+  
+  /* Когда скролл больше 50px */
+  .navbar.scrolled {
+    background-color: rgba(35, 59, 111, 0.85); /* полупрозрачный белый */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: rgb(255, 255, 255); /* меняем цвет текста на черный для читаемости */
+  }
+
   

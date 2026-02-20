@@ -8,15 +8,10 @@
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
 
-<header class="navbar">
-  <div class="container nav-content">
-    <div class="logo">Hanna Danilishyna</div>
-    <nav>
-      <a href="../index.html">Home</a>
-    </nav>
-  </div>
-</header>
+    <header class="navbar" id="navbar-placeholder">
+    </header>
 
 <!-- HERO -->
 <section class="case-hero">
@@ -28,10 +23,12 @@
     </p>
 
     <div class="case-meta">
-      <div>Role: UX Researcher · Data Analyst · Designer</div>
-      <div>Type: MSc Thesis Extension</div>
-      <div>Duration: ~30 hours</div>
-    </div>
+        <div><strong>Role:</strong> UX Researcher · Data Analyst · UX Designer</div>
+        <div><strong>Duration:</strong> ~30 hours</div>
+        <div><strong>Type:</strong> MSc Thesis Extension</div>
+        <div><strong>Tools:</strong> Python (pandas, networkx, plotly) · Figma</div>
+      </div>
+      
 
     <img src="/assets/traceless/dashboard.png" class="case-image">
   </div>
@@ -42,23 +39,58 @@
   <div class="container">
     <h2>Project Overview</h2>
     <p>
-      TraceLess explores how publicly available personal data can be aggregated
-      into a measurable digital exposure profile. The goal was to create a system
-      that quantifies risk while presenting it in an intuitive and transparent way.
-    </p>
+        TraceLess is a privacy analytics dashboard designed to help users understand and manage their digital exposure. The project investigates how fragmented pieces of publicly available information can be aggregated into a comprehensive personal exposure profile.
+        </p>
+        
+        <p>
+        The work builds upon my master's thesis research on user awareness of personal data exposure, privacy behaviors, and the design of tools that support transparency and control over one's digital footprint.
+        </p>
+        
+        <h3>Key Objectives</h3>
+        <ul>
+          <li>Quantify digital exposure across multiple data sources</li>
+          <li>Translate complex data into actionable privacy insights</li>
+          <li>Design an intuitive interface to communicate abstract risk information</li>
+        </ul>
+        
   </div>
 </section>
 
 <!-- RESEARCH -->
 <section class="case-section">
   <div class="container">
-    <h2>Research Insights</h2>
+    <h2>Research & Insights</h2>
 
-    <ul>
-      <li>Users underestimate the scale of publicly available personal data</li>
-      <li>Strong desire for transparency and control</li>
-      <li>Existing tools lack clarity and actionable insights</li>
-    </ul>
+<p>
+To understand how users perceive digital exposure, I conducted qualitative research combining interviews, surveys, and thematic analysis.
+</p>
+
+<h3>Research Methods</h3>
+<ul>
+  <li>User interviews on awareness of publicly available data</li>
+  <li>Surveys exploring emotional responses to exposure</li>
+  <li>Thematic coding into structured variables:</li>
+</ul>
+
+<ul>
+  <li>Awareness Level</li>
+  <li>Surprise Level</li>
+  <li>Desire for Control</li>
+  <li>Emotional Reaction</li>
+</ul>
+<div class="highlight-box">
+<h3>Key Insights</h3>
+<ul>
+  <li>Users consistently underestimated the scale of their public data</li>
+  <li>Awareness did not always translate into behavioral change</li>
+  <li>There was a strong demand for clear, visual privacy feedback</li>
+</ul>
+</div>
+<h3>Quantitative Reinforcement</h3>
+<p>
+External datasets from social media and privacy studies were integrated to validate qualitative patterns and strengthen data reliability.
+</p>
+
 
   </div>
 </section>
@@ -134,13 +166,13 @@
 
 <!-- DATA ARCHITECTURE -->
 <section class="case-section">
-    <div class="container">
+    <div class="highlight-box">
       <h2>Data Model</h2>
   
-      <p>
-        The system models digital exposure through a structured pipeline that
-        transforms raw public data into a measurable exposure score.
-      </p>
+      <p class="section-intro">
+        The system translates raw public data into a structured exposure score through a multi-stage pipeline.
+        </p>
+        
   
       <ul>
         <li>Data sources include social platforms, forums, and indexed content</li>
@@ -150,9 +182,12 @@
       </ul>
   
       <h3>Exposure Formula</h3>
-      <p>
+      <div class="formula-box">
         Exposure Score = Sensitivity × Visibility × Cross-linkability
-      </p>
+        </div>
+
+        
+        
   
     </div>
   </section>
@@ -168,7 +203,8 @@
       and exposure risks.
     </p>
 
-    <img src="/assets/traceless/graph.png" class="case-image">
+    <img src="/assets/traceless/graph.png" class="case-image graph-large">
+
   </div>
 </section>
 
@@ -180,7 +216,25 @@
       <p class="section-intro">
         The interface communicates complex privacy data through a clear three-level structure: overview, exploration, and detailed analysis.
       </p>
-  
+      <section class="case-section">
+        <div class="highlight-box">
+          <h2>Design Approach</h2>
+      
+          <p>
+          The interface was designed to communicate complex privacy data through
+          visual clarity, risk transparency, and structured information hierarchy.
+          </p>
+      
+          <ul>
+            <li>Dark SaaS-style interface with deep navy background</li>
+            <li>Electric cyan accents for key interactions</li>
+            <li>Color-coded risk system: red, amber, green</li>
+            <li>Platform-specific colors for fast recognition</li>
+          </ul>
+      
+        </div>
+      </section>
+      
       <div class="ui-grid">
   
         <!-- Dashboard -->
@@ -221,33 +275,25 @@
 <!-- OUTCOME -->
 <section class="case-section">
   <div class="container">
-    <h2>Outcome</h2>
+    <h2>Outcome & Impact</h2>
 
-    <ul>
-      <li>Created a data-driven UX system for digital exposure analysis</li>
-      <li>Integrated Python data visualization into UI design</li>
-      <li>Demonstrated how UX can communicate complex privacy risks</li>
-    </ul>
+<ul>
+  <li>Developed a data-driven UX system for visualizing personal digital exposure</li>
+  <li>Designed high-fidelity interfaces communicating complex risk data clearly</li>
+  <li>Integrated quantitative analysis into UX decision-making</li>
+  <li>Strengthened expertise in network visualization and privacy UX</li>
+</ul>
+
+<h3>Tools & Technologies</h3>
+<ul>
+  <li>Python: pandas, networkx, plotly</li>
+  <li>Figma: interface design and prototyping</li>
+  <li>Data sources: participant datasets, social media, privacy studies</li>
+</ul>
+
   </div>
 </section>
-<script>
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.lightbox .close');
-    
-    document.querySelectorAll('.clickable').forEach(img => {
-      img.addEventListener('click', () => {
-        lightbox.style.display = 'flex';
-        lightboxImg.src = img.dataset.full;
-      });
-    });
-    
-    // Закрытие при клике на X или вне картинки
-    closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) lightbox.style.display = 'none';
-    });
-    </script>
-    
+<script src="/js/navbar.js"></script>
+          
 </body>
 </html>

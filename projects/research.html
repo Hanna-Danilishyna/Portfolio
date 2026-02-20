@@ -8,108 +8,118 @@
 </head>
 
 <body>
-
-<header class="navbar">
-  <div class="container nav-content">
-    <div class="logo">Hanna Danilishyna</div>
-    <nav>
-      <a href="../index.html">Home</a>
-    </nav>
-  </div>
-</header>
+    <div class="scroll-progress"></div>
+    <header class="navbar" id="navbar-placeholder">
+    </header>
 
 <section class="case-hero">
   <div class="container">
     <h1>Experimental UX Research</h1>
     <p>Studies exploring perception, emotion, and physiological responses in HCI.</p>
     <div class="case-meta">
-      <div>Role: UX Researcher</div>
-      <div>Team: 6 / Solo</div>
-      <div>Duration: 3–4 months</div>
-    </div>
+        <div><strong>Role:</strong> UX Researcher</div>
+        <div><strong>Team:</strong> 6 / Solo</div>
+        <div><strong>Duration:</strong> 3–4 months</div>
+        <div><strong>Tools:</strong> Tobii Pro Nano, Python, Figma</div>
+      </div>
   </div>
 </section>
 
 <!-- BEAUTY FILTER STUDY -->
 <section class="case-section">
-  <div class="container">
-    <h2>The Effect of Beauty Filters on Perceived Attractiveness</h2>
-
-    <p class="section-intro">
-      Investigated how different filter strengths affect subjective attractiveness and physiological responses (pupil dilation).
-    </p>
-
-    <ul>
-      <li>Within-subject design: 16 participants, 3 filter intensities (0%, 100%, 200%)</li>
-      <li>AI-generated faces from thispersondoesnotexist.com</li>
-      <li>Eye-tracking measured pupil dilation while participants rated faces</li>
-    </ul>
-
-    <div class="research-grid">
-      <div class="research-card">
-        <img src="/assets/research/pic_with_filters.png" class="research-image">
-        <h3>Example Faces with Filters</h3>
-        <p>Participants saw faces with 0%, 100%, and 200% filter intensities.</p>
+    <div class="container">
+      <h2>The Effect of Beauty Filters on Perceived Attractiveness</h2>
+  
+      <p class="section-intro">
+        Investigated how different filter strengths affect subjective attractiveness perception and physiological responses (pupil dilation), providing insights into UX and social media design.
+      </p>
+  
+      <h3>Study Design</h3>
+      <ul>
+        <li>Within-subject design: 16 participants, 3 filter intensities (0%, 100%, 200%)</li>
+        <li>AI-generated faces from thispersondoesnotexist.com</li>
+        <li>Participants rated faces on a 7-point scale while eye-tracking measured pupil responses</li>
+      </ul>
+  
+      <h3>Visual Examples</h3>
+      <div class="research-grid">
+        <div class="research-card">
+          <img src="/assets/research/pic_with_filters.png" class="research-image">
+          <h3>Example Faces with Filters</h3>
+          <p>Faces presented with 0%, 100%, and 200% filter intensities for participant evaluation.</p>
+        </div>
+  
+        <div class="research-card">
+          <img src="/assets/research/mean_ratings.png" class="research-image">
+          <h3>Mean Attractiveness Ratings</h3>
+          <p>Intermediate filter (100%) increased perceived attractiveness, 200% reduced trust and authenticity.</p>
+        </div>
       </div>
-
-      <div class="research-card">
-        <img src="/assets/research/mean_ratings.png" class="research-image">
-        <h3>Mean Attractiveness Ratings</h3>
-        <p>Intermediate filter (100%) increased attractiveness; 200% decreased trust and authenticity.</p>
-      </div>
+  
+      <h3>Key Insights</h3>
+      <ul>
+        <li>Intermediate filter levels increase perceived attractiveness</li>
+        <li>Overly strong filters reduce trustworthiness perception</li>
+        <li>Pupil dilation validates physiological measures of subjective ratings</li>
+      </ul>
+  
+      <h3>Implications</h3>
+      <ul>
+        <li>Design choices affect user perception and self-image</li>
+        <li>Supports balanced filter design for social media UX</li>
+      </ul>
     </div>
-
-    <h3>Key Insights</h3>
-    <ul>
-      <li>Intermediate filter levels increase attractiveness perception</li>
-      <li>Overly strong filters reduce perceived trustworthiness</li>
-      <li>Pupil dilation validates physiological measure of subjective rating</li>
-    </ul>
-  </div>
-</section>
-
+  </section>
 <!-- PROFESSOR STUDY -->
 <section class="case-section">
-  <div class="container">
-    <h2>The Influence of Familiar vs. Unfamiliar Faces on Eyelid Distance</h2>
-
-    <p class="section-intro">
-      Explored how face familiarity affects eyelid distance and blink rate to understand physiological indicators of emotion in UX research.
-    </p>
-
-    <ul>
-      <li>Within-subject 2x3 design, 18 students, familiar vs unfamiliar professor faces</li>
-      <li>Measured eyelid distance and blink rate using Tobii Pro Nano eye-tracker</li>
-    </ul>
-
-    <div class="research-grid">
-      <div class="research-card">
-        <img src="/assets/research/prof_pic.png" class="research-image">
-        <h3>Professors Shown</h3>
-        <p>Images used in the experiment to test recognition effects.</p>
+    <div class="container">
+      <h2>The Influence of Familiar vs. Unfamiliar Faces on Eyelid Distance</h2>
+  
+      <p class="section-intro">
+        Studied how face familiarity affects eyelid distance and blink rate, exploring physiological indicators of emotion for UX research.
+      </p>
+  
+      <h3>Study Design</h3>
+      <ul>
+        <li>Within-subject 2x3 design: 18 students, familiar vs. unfamiliar professor faces</li>
+        <li>Measured eyelid distance and blink rate using Tobii Pro Nano eye-tracker</li>
+      </ul>
+  
+      <h3>Visual Data</h3>
+      <div class="research-grid">
+        <div class="research-card">
+          <img src="/assets/research/prof_pic.png" class="research-image">
+          <h3>Professors Shown</h3>
+          <p>Images used to test recognition effects.</p>
+        </div>
+  
+        <div class="research-card">
+          <img src="/assets/research/eyelids_dist.png" class="research-image">
+          <h3>Eyelid Distance</h3>
+          <p>Boxplot showing average eyelid distance across familiar and unfamiliar faces.</p>
+        </div>
+  
+        <div class="research-card">
+          <img src="/assets/research/blinking_rate.png" class="research-image">
+          <h3>Blinking Rate</h3>
+          <p>Boxplot showing blink rate differences by familiarity.</p>
+        </div>
       </div>
-
-      <div class="research-card">
-        <img src="/assets/research/eyelids_dist.png" class="research-image">
-        <h3>Eyelid Distance</h3>
-        <p>Boxplot showing average eyelid distance across familiar and unfamiliar faces.</p>
-      </div>
-
-      <div class="research-card">
-        <img src="/assets/research/blinking_rate.png" class="research-image">
-        <h3>Blinking Rate</h3>
-        <p>Boxplot showing blink rate differences by familiarity.</p>
-      </div>
+  
+      <h3>Key Findings</h3>
+      <ul>
+        <li>No significant change in eyelid distance based on familiarity</li>
+        <li>Blink rate slightly varied but overall consistent</li>
+        <li>Highlights complexity of using eyelid distance alone for emotion detection</li>
+      </ul>
+  
+      <h3>Insights & Implications</h3>
+      <ul>
+        <li>Evidence for careful validation of biometric emotion detection</li>
+        <li>Supports future research on multimodal physiological signals in UX</li>
+      </ul>
     </div>
-
-    <h3>Key Insights</h3>
-    <ul>
-      <li>No significant effect of familiarity on eyelid distance</li>
-      <li>Blink rate slightly varied but overall consistent</li>
-      <li>Highlights complexity of using eyelid distance alone for emotion detection</li>
-    </ul>
-  </div>
-</section>
-
+  </section>
+  <script src="/js/navbar.js"></script>
 </body>
 </html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TraceLess — Privacy Analytics Dashboard</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="scroll-progress"></div>
+
+    <header class="navbar" id="navbar-placeholder">
+    </header>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="container">
+    <h1>TraceLess — Das Übergeteilte Selbst</h1>
+    <p>
+      Ein Privacy-Analytics-Dashboard, das persönliche digitale Exposition visualisiert
+      und komplexe Daten in umsetzbare Erkenntnisse übersetzt.
+    </p>
+
+    <div class="case-meta">
+        <div><strong>Rolle:</strong> UX Forscherin · Datenanalystin · UX Designerin</div>
+        <div><strong>Dauer:</strong> ~30 Stunden</div>
+        <div><strong>Typ:</strong> Erweiterung der Masterarbeit</div>
+        <div><strong>Tools:</strong> Python (pandas, networkx, plotly) · Figma</div>
+      </div>
+      
+
+    <img src="/assets/traceless/dashboard.png" class="case-image">
+  </div>
+</section>
+
+<!-- CONTEXT -->
+<section class="case-section">
+  <div class="container">
+    <h2>Projektübersicht</h2>
+    <p>
+        TraceLess ist ein Privacy-Analytics-Dashboard, das Nutzern hilft, ihre digitale Exposition zu verstehen und zu verwalten. Das Projekt untersucht, wie fragmentierte, öffentlich verfügbare Informationen zu einem umfassenden persönlichen Expositionsprofil zusammengeführt werden können.
+    </p>
+        
+    <p>
+        Die Arbeit baut auf meiner Masterarbeit über Nutzerbewusstsein für persönliche Datensichtbarkeit, Datenschutzverhalten und Design von Tools auf, die Transparenz und Kontrolle über den digitalen Fußabdruck unterstützen.
+    </p>
+        
+    <h3>Ziele</h3>
+    <ul>
+      <li>Digitale Exposition über mehrere Datenquellen quantifizieren</li>
+      <li>Komplexe Daten in umsetzbare Datenschutz-Einsichten übersetzen</li>
+      <li>Intuitive Benutzeroberfläche zur Kommunikation abstrakter Risikoinformationen gestalten</li>
+    </ul>
+        
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="case-section">
+  <div class="container">
+    <h2>Forschung & Erkenntnisse</h2>
+
+    <p>
+      Um zu verstehen, wie Nutzer digitale Exposition wahrnehmen, habe ich qualitative Forschung mit Interviews, Umfragen und thematischer Analyse kombiniert.
+    </p>
+
+    <h3>Methoden</h3>
+    <ul>
+      <li>Interviews zur Sensibilisierung für öffentlich zugängliche Daten</li>
+      <li>Umfragen zu emotionalen Reaktionen auf Exposition</li>
+      <li>Thematische Kodierung in strukturierte Variablen:</li>
+    </ul>
+
+    <ul>
+      <li>Bewusstseinsgrad</li>
+      <li>Überraschungsgrad</li>
+      <li>Kontrollbedürfnis</li>
+      <li>Emotionale Reaktion</li>
+    </ul>
+    
+    <div class="highlight-box">
+      <h3>Wesentliche Erkenntnisse</h3>
+      <ul>
+        <li>Nutzer unterschätzten konsequent das Ausmaß ihrer öffentlichen Daten</li>
+        <li>Bewusstsein führte nicht immer zu Verhaltensänderungen</li>
+        <li>Starker Bedarf an klarer, visueller Datenschutz-Rückmeldung</li>
+      </ul>
+    </div>
+
+    <h3>Quantitative Absicherung</h3>
+    <p>
+      Externe Datensätze aus sozialen Medien und Datenschutzstudien wurden integriert, um qualitative Muster zu validieren und die Datenzuverlässigkeit zu stärken.
+    </p>
+  </div>
+</section>
+
+<!-- PERSONAS -->
+<section class="case-section">
+    <div class="container">
+      <h2>Personas</h2>
+      <p class="section-intro">
+        Basierend auf qualitativen Interviews und thematischer Analyse
+        entstanden zwei zentrale Nutzertypen.
+      </p> 
+      <div class="persona-grid">
+  
+        <!-- Persona 1 -->
+        <div class="persona-card">
+          <img src="/assets/traceless/persona_female.jpg" class="persona-avatar">
+  
+          <div class="persona-content">
+            <h3>Die Besorgte Nutzerin</h3>
+  
+            <p class="persona-subtitle">
+              Möchte digitalen Fußabdruck reduzieren und Kontrolle über persönliche Daten zurückgewinnen.
+            </p>
+  
+            <h4>Ziele</h4>
+            <ul>
+              <li>Öffentliche Exposition reduzieren</li>
+              <li>Verstehen, wer auf ihre Daten zugreifen kann</li>
+              <li>Privatsphäre wiederherstellen</li>
+            </ul>
+  
+            <h4>Frustrationen</h4>
+            <ul>
+              <li>Überwältigt von komplexen Datenschutzeinstellungen</li>
+              <li>Weiß nicht, welche Daten öffentlich sind</li>
+              <li>Angst vor Missbrauch persönlicher Informationen</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Persona 2 -->
+        <div class="persona-card">
+          <img src="/assets/traceless/persona_male.jpg" class="persona-avatar">
+  
+          <div class="persona-content">
+            <h3>Der Bewusste Analyst</h3>
+  
+            <p class="persona-subtitle">
+              Möchte klare Einsichten und messbare Kontrolle über digitale Präsenz.
+            </p>
+  
+            <h4>Ziele</h4>
+            <ul>
+              <li>Exposition über Plattformen nachverfolgen</li>
+              <li>Risiken der Datenaggregation verstehen</li>
+              <li>Informierte Datenschutzentscheidungen treffen</li>
+            </ul>
+  
+            <h4>Frustrationen</h4>
+            <ul>
+              <li>Mangelnde Transparenz in bestehenden Tools</li>
+              <li>Exposition schwer quantifizierbar</li>
+              <li>Manuelles Monitoring zeitaufwendig</li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- DATA ARCHITECTURE -->
+<section class="case-section">
+    <div class="highlight-box">
+      <h2>Datenmodell</h2>
+  
+      <p class="section-intro">
+        Das System übersetzt Rohdaten in einen strukturierten Expositionsscore über eine mehrstufige Pipeline.
+      </p>
+        
+  
+      <ul>
+        <li>Datenquellen: soziale Plattformen, Foren, indexierte Inhalte</li>
+        <li>Jeder Datenpunkt wird nach Sensitivität und Sichtbarkeit bewertet</li>
+        <li>Cross-Linking zeigt, wie leicht Daten aggregiert werden können</li>
+        <li>Alle Faktoren werden zu einem normalisierten Expositionsscore kombiniert</li>
+      </ul>
+  
+      <h3>Expositionsformel</h3>
+      <div class="formula-box">
+        Expositionsscore = Sensitivität × Sichtbarkeit × Cross-Linkbarkeit
+      </div>
+    </div>
+</section>
+  
+
+<!-- VISUALIZATION -->
+<section class="case-section">
+  <div class="container">
+    <h2>Netzwerkvisualisierung</h2>
+
+    <p>
+      Ein graphbasiertes Modell zeigt Beziehungen zwischen Plattformen, Datenpunkten
+      und Expositionsrisiken.
+    </p>
+
+    <img src="/assets/traceless/graph.png" class="case-image graph-large">
+
+  </div>
+</section>
+
+<!-- UX DESIGN -->
+<section class="case-section">
+    <div class="container">
+      <h2>Interface Design</h2>
+  
+      <p class="section-intro">
+        Die Benutzeroberfläche vermittelt komplexe Datenschutzinformationen über eine klare dreistufige Struktur: Übersicht, Exploration und Detailanalyse.
+      </p>
+      <section class="case-section">
+        <div class="highlight-box">
+          <h2>Designansatz</h2>
+      
+          <p>
+          Die Oberfläche wurde entwickelt, um komplexe Datenschutzinformationen durch visuelle Klarheit, Transparenz und strukturierte Informationshierarchie zu vermitteln.
+          </p>
+      
+          <ul>
+            <li>Dunkles SaaS-Interface mit tiefem Marineblau-Hintergrund</li>
+            <li>Elektrisch-cyanfarbene Akzente für Schlüsselinteraktionen</li>
+            <li>Farbcodiertes Risikosystem: Rot, Gelb, Grün</li>
+            <li>Plattformspezifische Farben für schnelle Erkennung</li>
+          </ul>
+      
+        </div>
+      </section>
+      
+      <div class="ui-grid">
+  
+        <!-- Dashboard -->
+        <div class="ui-card">
+          <img src="/assets/traceless/dashboard.png" class="ui-image clickable" data-full="/assets/traceless/dashboard.png">
+  
+          <h3>Dashboard Übersicht</h3>
+          <p>High-Level Expositionsscore und Risikoverteilung über Plattformen.</p>
+        </div>
+  
+        <!-- Graph View -->
+        <div class="ui-card">
+          <img src="/assets/traceless/graph_view.png" class="ui-image clickable small" data-full="/assets/traceless/graph_view.png">
+  
+          <h3>Netzwerk-Graph Ansicht</h3>
+          <p>Erkunden, wie persönliche Daten verknüpft sind.</p>
+        </div>
+  
+        <!-- Risk Breakdown -->
+        <div class="ui-card">
+          <img src="/assets/traceless/risk_distr.png" class="ui-image clickable" data-full="/assets/traceless/risk_distr.png">
+  
+          <h3>Risikoaufteilung</h3>
+          <p>Detaillierte Tabelle mit Datenpunkten, Risikostufen und empfohlenen Maßnahmen.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+  </div>
+  
+
+<!-- OUTCOME -->
+<section class="case-section">
+  <div class="container">
+    <h2>Ergebnis & Wirkung</h2>
+
+<ul>
+  <li>Entwicklung eines datengetriebenen UX-Systems zur Visualisierung persönlicher digitaler Exposition</li>
+  <li>Gestaltung hochauflösender Interfaces zur klaren Darstellung komplexer Risikodaten</li>
+  <li>Integration quantitativer Analysen in UX-Entscheidungen</li>
+  <li>Vertiefung der Expertise in Netzwerkvisualisierung und Privacy-UX</li>
+</ul>
+
+<h3>Tools & Technologien</h3>
+<ul>
+  <li>Python: pandas, networkx, plotly</li>
+  <li>Figma: Interface-Design und Prototyping</li>
+  <li>Datenquellen: Teilnehmerdatensätze, soziale Medien, Datenschutzstudien</li>
+</ul>
+
+  </div>
+</section>
+
+<script src="/js/navbar.js"></script>
+
+</body>
+</html>
