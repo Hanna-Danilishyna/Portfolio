@@ -6,7 +6,7 @@
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #151D32; /* более светлый, глубокий темно-синий */
+    background-color: #151D32; 
     color: #e2e8f0;
     line-height: 1.6;
   }
@@ -18,11 +18,7 @@
     margin: 0 auto;
   }
   
-  /* Navbar 
-  .navbar {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #1e293b;
-  }*/
+
   
   .nav-content {
     display: flex;
@@ -46,7 +42,7 @@
     color: #38bdf8;
   }
   
-  /* Hero Section */
+
   .hero {
     padding: 6rem 0 4rem;
   }
@@ -61,7 +57,7 @@
     color: #94a3b8;
   }
   
-  /* Work Section */
+
   .work {
     padding: 4rem 0;
   }
@@ -108,13 +104,13 @@
     color: #38bdf8;
   }
   
-  /* About Section */
+ 
   .about {
     padding: 4rem 0;
     border-top: 1px solid #1e293b;
   }
   
-  /* Footer */
+  
   footer {
     padding: 2rem 0;
     text-align: center;
@@ -177,9 +173,9 @@
   }
   
   .case-image {
-    display: block;      /* обязательно, иначе margin auto не сработает */
+    display: block;     
     width: 50%;
-    margin: 2rem auto 0; /* сверху 2rem, по центру auto, снизу 0 */
+    margin: 2rem auto 0; 
     border-radius: 12px;
     border: 1px solid #1e293b;
   }
@@ -268,9 +264,9 @@
     color: #0f172a;
   }
 
-/* Lightbox */
+
 .lightbox {
-    display: none; /* скрыто по умолчанию */
+    display: none; 
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -319,7 +315,7 @@
   
   .ui-image {
     width: 100%;
-    max-height: 300px; /* ограничивает размер всех экранов */
+    max-height: 300px; 
     object-fit: contain;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -329,7 +325,7 @@
 
 
 
-/* Gallery for Affinity, Identity, Wall Walk */
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -365,7 +361,7 @@
     color: #38bdf8;
   }
   
-  /* UI cards */
+
   .ui-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -392,7 +388,7 @@
     margin-bottom: 1rem;
   }
   
-  /* Wide full-flow UI */
+
   .ui-wide {
     margin-top: 2rem;
     text-align: center;
@@ -406,7 +402,7 @@
     border: 1px solid #1e293b;
   }
   
-  /* Modal */
+
   .modal {
     display: none;
     position: fixed;
@@ -513,7 +509,7 @@
   }
 
 
-/* ---------- CASE PAGE GLOBAL STYLES ---------- */
+
 
 .case-section {
     padding: 4rem 0;
@@ -524,7 +520,7 @@
     max-width: 800px;
   }
   
-  /* Заголовки внутри кейсов */
+
   .case-section h2 {
     margin-bottom: 1.5rem;
   }
@@ -536,13 +532,13 @@
     font-size: 1.1rem;
   }
   
-  /* Параграфы */
+
   .case-section p {
     margin-bottom: 1rem;
     color: #94a3b8;
   }
   
-  /* Списки */
+
   .case-section ul {
     margin-left: 0;
     padding-left: 1.2rem;
@@ -810,7 +806,7 @@
     border-radius: 50%;
   }
 
-  /* Research projects layout */
+
 .research-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -854,7 +850,7 @@
 
 
 
-  /* Логотип + локация */
+
 .logo-block {
     display: flex;
     flex-direction: column;
@@ -871,9 +867,9 @@
 
 
 
-  /* Navbar ссылки */
+
 .nav-content nav a {
-    margin-left: 1.8rem; /* равномерный отступ между всеми элементами */
+    margin-left: 1.8rem; 
     display: inline-block;
      text-align: center;
   }
@@ -884,7 +880,7 @@
   }
 
 
-  /* Локация рядом с именем */
+
 .logo {
     font-weight: 600;
     font-size: 1rem;
@@ -892,12 +888,7 @@
     flex-direction: column;
   }
   
-  
- 
-/* Контейнер dropdown */
 
-
-/* Кнопка Contact */
 .contact-btn {
     background: none;
     border: 2px solid #7dd3fc;
@@ -909,14 +900,14 @@
     padding: 0.4rem 0.8rem;
 }
 
-/* Меню dropdown */
+
 .contact-menu {
     position: absolute;
     top: 120%;
     left: 50%;
     text-align: center;
     margin-left: 0 !important;
-    transform: translateX(-50%) translateY(-10px); /*привязываем к левому краю контейнера */
+    transform: translateX(-50%) translateY(-10px); 
     background-color: #1e293b;
     color: #7dd3fc;
     border-radius: 8px;
@@ -926,9 +917,9 @@
 
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* растягиваем ссылки на всю ширину */
+    align-items: stretch; 
     min-width: 160px;
-    width: 160px; /* минимальная ширина dropdown */
+    width: 160px; 
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -936,14 +927,14 @@
 
 }
 
-/* Показываем меню */
+
 .contact-menu.show {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0); /* сохраняем центрирование */
+    transform: translateX(-50%) translateY(0); 
 }
 
-/* Ссылки внутри dropdown */
+
 .contact-menu a {
     display: block;
     text-align: center;
@@ -954,14 +945,14 @@
     
 }
 
-/* Hover эффект для ссылок */
+
 .contact-menu a:hover {
     background-color: #0f172a;
     border-radius: 4px;
 }
 
 .contact-menu a {
-    margin-left: 0;  /* ← add this one line */
+    margin-left: 0;  
     display: block;
     text-align: center;
     padding: 0.6rem 1rem;
@@ -976,24 +967,24 @@
     font-size: 0.95rem !important;
 }
 
-/* Навигация flex */
+
 .nav-content nav {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* расстояние между ссылками */
+    gap: 1.5rem;
   }
   
-  /* Контейнер языков */
+  
   .lang-wrapper {
-    display: flex;       /* чтобы держать DE | ENG в одну линию */
+    display: flex;       
     align-items: center; 
-    margin-left: 1rem;   /* расстояние от соседней ссылки */
+    margin-left: 1rem;   
   }
   
-  /* Собственно языки */
+ 
   .lang-switch {
     display: flex;
-    gap: 0.3rem;         /* расстояние между DE | ENG */
+    gap: 0.3rem;        
   }
   
   .lang-switch a {
@@ -1011,28 +1002,28 @@
   }
 
 
-  /* NAVBAR GLOBAL */
+ 
 .nav-content {
     display: flex;
-    justify-content: space-between; /* логотип слева, остальное справа */
+    justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
   }
   
-  /* Основные ссылки */
+  
   nav {
     display: flex;
     align-items: center;
     gap: 1.5rem;
   }
   
-  /* Логотип */
+  
   .logo {
     font-weight: 600;
     font-size: 1rem;
   }
   
-  /* Contact dropdown */
+  
   .contact-dropdown {
     position: relative;
   }
@@ -1084,7 +1075,7 @@
     border-radius: 4px;
   }
   
-  /* PDF кнопка */
+  
   .pdf-button {
     padding: 0.5rem 1rem;
     border: 1px solid #38bdf8;
@@ -1099,12 +1090,11 @@
     color: #0f172a;
   }
   
-  /* Языки */
- /* ---------- OVERRIDE для языков ---------- */
+
 .lang-wrapper {
-    margin-left: 0 !important;        /* убираем все старые отступы */
-    display: flex !important;         /* фиксируем flex */
-    align-items: center !important;   /* по вертикали центр */
+    margin-left: 0 !important;        
+    display: flex !important;         
+    align-items: center !important;   
 }
 
 .lang-switch {
@@ -1134,17 +1124,17 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: transparent; /* изначально прозрачный */
+    background-color: transparent;
     transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    color: white; /* чтобы текст был виден на hero */
+    color: white;
     padding: 1rem 0;
   }
   
-  /* Когда скролл больше 50px */
+  
   .navbar.scrolled {
-    background-color: rgba(35, 59, 111, 0.85); /* полупрозрачный белый */
+    background-color: rgba(35, 59, 111, 0.85);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    color: rgb(255, 255, 255); /* меняем цвет текста на черный для читаемости */
+    color: rgb(255, 255, 255); 
   }
 
   
