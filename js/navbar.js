@@ -1,6 +1,4 @@
-// ======================
-// LOAD NAVBAR
-// ======================
+
 const navbarPath = '/navbar.html';
 
 fetch(navbarPath)
@@ -12,9 +10,6 @@ fetch(navbarPath)
   });
 
 
-// ======================
-// INIT NAVBAR LOGIC
-// ======================
 function initNavbar() {
 
   // ---------- Dropdown ----------
@@ -104,7 +99,7 @@ const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
 
-  if (scrollTop > 50) { // когда проскроллено больше 50px
+  if (scrollTop > 50) { 
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
