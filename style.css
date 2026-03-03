@@ -1137,4 +1137,14 @@
     color: rgb(255, 255, 255); 
   }
 
+
+  .github-link {
+    font-weight: 500;
+    color: #94a3b8;
+  }
+  
+  .github-link:hover {
+    color: #38bdf8;
+  }
+
   
