@@ -127,11 +127,6 @@
   
   
   
-  .case-section {
-    padding: 3rem 0;
-    border-top: 1px solid #1e293b;
-  }
-  
   .case-section h2 {
     margin-bottom: 1rem;
   }
@@ -1127,25 +1122,7 @@
     text-decoration: underline !important;
 }
 
-/* .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: transparent;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    color: white;
-    padding: 1rem 0;
-  }
-  
-  
-  .navbar.scrolled {
-    background-color: rgba(35, 59, 111, 0.85);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    color: rgb(255, 255, 255); 
-  }
- */
+
  .navbar {
   position: fixed;
   top: 0;
@@ -1167,7 +1144,10 @@
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
-
+.lang-switch a.active {
+  font-weight: bold;
+  opacity: 1;
+}
   .github-link {
     font-weight: 500;
     color: #94a3b8;
