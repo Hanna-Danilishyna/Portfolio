@@ -17,7 +17,7 @@
 </header>
 
 
-<section class="hero">
+<section id="home" class="hero">
   <div class="container">
     <h1>Data-Driven UX Researcher & Designer</h1>
     <p>
@@ -65,7 +65,27 @@
               BSc System Engineering & Ergonomics
             </p>
           </div>
-    
+
+            <div class="about-skills">
+            <h3>Skills</h3>
+
+              <div class="skills-tags">
+
+                <div class="skill-row">
+                  <span>UX Research</span>
+                  <span>Usability Testing</span>
+                  <span>Python</span>
+                  <span>SQL</span>
+                  <span>Data Visualization</span>
+                  <span>Figma</span>
+                  <span>Statistische Analyse</span>
+                  <span>A/B Testing</span>
+                </div>
+
+              </div>
+            </div>
+
+            
         </div>
     </div>
   </section>
@@ -73,38 +93,147 @@
 
 <section id="work" class="work">
   <div class="container">
+
     <h2>Selected Work</h2>
 
+    <div class="project-toggle">
+      <button class="toggle-btn active" data-category="ux">
+        UX/UI
+      </button>
+
+      <button class="toggle-btn" data-category="data">
+        Data Analysis
+      </button>
+    </div>
+
     <div class="projects-grid">
-      <a href="projects/traceless.html" class="project-card">
+
+      <!-- UX PROJECTS -->
+
+      <a href="projects/traceless.html"
+         class="project-card"
+         data-category="ux">
+
         <h3>TraceLess</h3>
-        <p>Privacy analytics dashboard combining UX, data modeling and network visualization.</p>
-        <span class="tag">Python · Data Architecture · UX Systems</span>
+
+        <p>
+          Privacy analytics dashboard combining UX,
+          data modeling and network visualization.
+        </p>
+
+        <span class="tag">
+          Python · Data Architecture · UX Systems
+        </span>
       </a>
 
-      <a href="projects/digital_footprint.html" class="project-card">
-        <h3>Unveiling the Digital Footprint on Social Media (Master Thesis)</h3>
-        <p>Research-driven mobile app helping users visualize and manage online exposure.</p>
-        <span class="tag">UX Research · Privacy · Prototyping</span>
+      <a href="projects/digital_footprint.html"
+         class="project-card"
+         data-category="ux">
+
+        <h3>
+          Unveiling the Digital Footprint on Social Media
+          (Master Thesis)
+        </h3>
+
+        <p>
+          Research-driven mobile app helping users visualize
+          and manage online exposure.
+        </p>
+
+        <span class="tag">
+          UX Research · Privacy · Prototyping
+        </span>
       </a>
 
-      <a href="projects/db.html" class="project-card">
+      <a href="projects/db.html"
+         class="project-card"
+         data-category="ux">
+
         <h3>Deutsche Bahn Experience</h3>
-        <p>Contextual research and service design improvements for passenger journeys.</p>
-        <span class="tag">Contextual Inquiry · Workshops</span>
+
+        <p>
+          Contextual research and service design improvements
+          for passenger journeys.
+        </p>
+
+        <span class="tag">
+          Contextual Inquiry · Workshops
+        </span>
       </a>
 
-      <a href="projects/research.html" class="project-card">
+      <a href="projects/research.html"
+         class="project-card"
+         data-category="ux">
+
         <h3>Experimental UX Research</h3>
-        <p>Eye-tracking and biometric studies exploring perception and emotion in HCI.</p>
-        <span class="tag">Quantitative Research · Eye Tracking</span>
+
+        <p>
+          Eye-tracking and biometric studies exploring
+          perception and emotion in HCI.
+        </p>
+
+        <span class="tag">
+          Quantitative Research · Eye Tracking
+        </span>
       </a>
 
-      <a href="projects/funnel.html" class="project-card">
+      <!-- DATA PROJECTS -->
+
+      <a href="projects/funnel.html"
+         class="project-card"
+         data-category="data"
+         style="display:none;">
+
         <h3>Funnel & Data Analysis</h3>
-        <p>Data-driven insights to improve user flows and conversion.</p>
-        <span class="tag">Python · Data Analysis · UX</span>
+
+        <p>
+          Data-driven insights to improve user flows
+          and conversion.
+        </p>
+
+        <span class="tag">
+          Python · Data Analysis · UX
+        </span>
       </a>
+
+      <a href="https://github.com/Hanna-Danilishyna/financial-analysis-chatbot"
+         target="_blank"
+         class="project-card"
+         data-category="data"
+         style="display:none;">
+
+        <h3>Financial Analysis Chatbot</h3>
+
+        <p>
+          AI-powered financial analysis assistant that
+          processes financial data, generates insights,
+          and enables conversational querying.
+        </p>
+
+        <span class="tag">
+          Python · NLP · Financial Analysis · Streamlit · AI
+        </span>
+      </a>
+
+      <a href="https://github.com/Hanna-Danilishyna/customer-churn-analysis"
+         target="_blank"
+         class="project-card"
+         data-category="data"
+         style="display:none;">
+
+        <h3>Customer Churn Analysis</h3>
+
+        <p>
+          Customer churn prediction and behavioral analysis
+          focused on identifying retention risks and
+          extracting actionable business insights.
+        </p>
+
+        <span class="tag">
+          Python · SQL · Machine Learning · Data Visualization
+        </span>
+      </a>
+
     </div>
   </div>
 </section>
@@ -118,5 +247,32 @@
   </div>
 </footer>
 <script src="/js/navbar.js" defer></script>
+<script>
+const buttons = document.querySelectorAll('.toggle-btn');
+const projects = document.querySelectorAll('.project-card');
+
+buttons.forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const category = button.dataset.category;
+
+    projects.forEach(project => {
+
+      if (project.dataset.category === category) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+
+    });
+
+  });
+
+});
+</script>
 </body>
 </html>

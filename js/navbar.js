@@ -187,10 +187,10 @@ function initNavbar() {
   const navbar = document.querySelector('.navbar');
   const contactBtn = document.querySelector('.contact-btn');
   const contactMenu = document.querySelector('.contact-menu');
-  const pdfButton = document.getElementById('pdf-button');
+  // const pdfButton = document.getElementById('pdf-button');
   const navHome = document.getElementById('nav-home');
-  const navWork = document.getElementById('nav-work');
   const navAbout = document.getElementById('nav-about');
+  const navWork = document.getElementById('nav-work');
   const langDe = document.getElementById('lang-de');
   const langEn = document.getElementById('lang-en');
 
@@ -263,19 +263,19 @@ function initNavbar() {
 
   // PDF button
   const homePath = isGerman ? '/de/index.html' : '/index.html';
-  if (pdfButton) {
-    pdfButton.href = isGerman
-      ? '/de/portfolio_uxui_danilishyna_2026_deutsch.pdf'
-      : '/portfolio_ux_danilishyna_2026_english.pdf';
-    pdfButton.textContent = isGerman
-      ? 'Portfolio PDF herunterladen'
-      : 'Download PDF';
-  }
+  // if (pdfButton) {
+  //   pdfButton.href = isGerman
+  //     ? '/de/portfolio_uxui_danilishyna_2026_deutsch.pdf'
+  //     : '/portfolio_ux_danilishyna_2026_english.pdf';
+  //   pdfButton.textContent = isGerman
+  //     ? 'Portfolio PDF herunterladen'
+  //     : 'Download PDF';
+  // }
 
   // Navbar text
   if (navHome) navHome.textContent = isGerman ? 'Startseite' : 'Home';
   if (navWork) navWork.textContent = isGerman ? 'Projekte' : 'Work';
-  if (navAbout) navAbout.textContent = isGerman ? 'Über mich' : 'About';
+  if (navAbout) navAbout.textContent = isGerman ? 'Über mich' : 'About Me';
 
   // Smooth scroll to sections
   function scrollOrGo(sectionId) {
